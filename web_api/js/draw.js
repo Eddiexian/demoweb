@@ -1,6 +1,6 @@
 var cvs = document.getElementById('cvs');
 var ctx = cvs.getContext('2d');
-var radius =20;
+var radius =15;
 var dragging = false;
 
 cvs.width = 280;
