@@ -37,6 +37,12 @@ var disengage=function(){
 	dragging = false;
 	ctx.beginPath();
 }
+
+function clearCanvas(canvas, ctx) {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+}
+
+
 setCanvasPosition();
 cvs.addEventListener('mousedown',engage);
 cvs.addEventListener('mousemove', putPoint);
