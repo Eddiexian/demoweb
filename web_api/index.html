@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta nae="viewport" content="width=device-width, iniial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<script>
+	window.onload=function(){
+	var cvs = document.getElementById("cvs");
+	var ctx = cvs.getContext("2d");
+
+	}
+</script>
+
+<body style='margin: 0'>
+	
+	<!--<input type="text" id='picture'><br>
+
+	<input type="submit" value="submit" onclick="submit()"><br><br>
+	-->
+
+	<br>
+	
+	<div id="toprow" style="position:absolute; left:300px; top: 400px;"><label>繪圖 0~9</label><br></div>
+	<canvas id="cvs" width='280' height='280' style="display: block; border:solid 1px #000000;" >
+	
+	</canvas>
+	
+	<script src="./js/draw.js"></script>
+	<script src="./js/index.js"></script>
+	<button onclick='getpixel();' id='predict' style="position:absolute; left:550px; top: 400px;">預測</button>
+	
+	<!--
+	<!--上傳圖片的按鈕
+	
+	<input id="file" type="file" onchange="fChange()"/><br><br>
+	
+	-->
+	<!--預覽區塊-->
+	<img id="bold" ><br>
+	
+	<p style="position:absolute; left:300px; top: 500px;">預測結果:<span id="resultText"></span></p>
+
+	
+	
+</body>
+</html>
+	
